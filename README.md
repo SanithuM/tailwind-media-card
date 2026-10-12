@@ -1,16 +1,63 @@
-# React + Vite
+# Tailwind Media Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A small React + Vite project that showcases two profile card variants styled with Tailwind CSS:
 
-Currently, two official plugins are available:
+- **Split card** with user details and stats below the image
+- **Overlay card** with a gradient overlay and hover-to-video preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The UI uses Lucide React icons and local image/video assets from the `public` folder.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite 8
+- Tailwind CSS 4 (`@tailwindcss/vite`)
+- Lucide React
+- Oxlint
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Prerequisites
+
+- Node.js 18+ (recommended)
+- npm
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start development server
+
+```bash
+npm run dev
+```
+
+Then open the local URL shown in the terminal (usually `http://localhost:5173`).
+
+## Available Scripts
+
+- `npm run dev` — start the Vite dev server
+- `npm run build` — create a production build
+- `npm run preview` — preview the production build locally
+- `npm run lint` — run Oxlint
+
+## Project Structure
+
+```text
+src/
+  App.jsx
+  components/
+    Cardgrid.jsx
+  index.css
+public/
+  images/batman.webp
+  videos/batman.mp4
+  videos/batman2.mp4
+```
+
+## Notes
+
+- Hovering the overlay card switches from the static image to video playback.
+- Tailwind is enabled through `@tailwindcss/vite` and imported in `src/index.css`.
