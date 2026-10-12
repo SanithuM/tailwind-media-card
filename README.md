@@ -1,5 +1,11 @@
 # Tailwind Media Card
 
+![React](https://img.shields.io/badge/React-gray?logo=react)
+![Vite](https://img.shields.io/badge/Vite-gray?logo=vite)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-gray?logo=tailwindcss)
+![Lucide React](https://img.shields.io/badge/Lucide-gray?logo=lucide)
+![npm](https://img.shields.io/badge/npm-gray?logo=npm)
+
 A small React + Vite project that showcases two profile card variants styled with Tailwind CSS:
 
 - **Split card** with user details and stats below the image
@@ -7,13 +13,9 @@ A small React + Vite project that showcases two profile card variants styled wit
 
 The UI uses Lucide React icons and local image/video assets from the `public` folder.
 
-## Tech Stack
+## Preview
 
-- React 19
-- Vite 8
-- Tailwind CSS 4 (`@tailwindcss/vite`)
-- Lucide React
-- Oxlint
+<img src="public/preview.png" alt="preview">
 
 ## Getting Started
 
